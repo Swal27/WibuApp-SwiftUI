@@ -11,6 +11,11 @@
 		DA0B617C2B7656CC00113B22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0B617B2B7656CC00113B22 /* ContentView.swift */; };
 		DA0B617E2B7656CF00113B22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0B617D2B7656CF00113B22 /* Assets.xcassets */; };
 		DA0B61812B7656CF00113B22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0B61802B7656CF00113B22 /* Preview Assets.xcassets */; };
+		DA5723A82B78989300CD9DD6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5723A72B78989300CD9DD6 /* HomeView.swift */; };
+		DA5723AE2B78CE9200CD9DD6 /* Waifu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5723AD2B78CE9200CD9DD6 /* Waifu.swift */; };
+		DA5723B02B78CFC800CD9DD6 /* WaifuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5723AF2B78CFC800CD9DD6 /* WaifuViewModel.swift */; };
+		DA5723B22B78D10400CD9DD6 /* WaifuAPIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5723B12B78D10400CD9DD6 /* WaifuAPIServices.swift */; };
+		DA5723B42B78D2C700CD9DD6 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5723B32B78D2C700CD9DD6 /* ActivityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		DA0B617B2B7656CC00113B22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA0B617D2B7656CF00113B22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0B61802B7656CF00113B22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA5723A72B78989300CD9DD6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DA5723AD2B78CE9200CD9DD6 /* Waifu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waifu.swift; sourceTree = "<group>"; };
+		DA5723AF2B78CFC800CD9DD6 /* WaifuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaifuViewModel.swift; sourceTree = "<group>"; };
+		DA5723B12B78D10400CD9DD6 /* WaifuAPIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaifuAPIServices.swift; sourceTree = "<group>"; };
+		DA5723B32B78D2C700CD9DD6 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,9 @@
 		DA0B61782B7656CC00113B22 /* WibuApp */ = {
 			isa = PBXGroup;
 			children = (
-				DA0B61792B7656CC00113B22 /* WibuAppApp.swift */,
-				DA0B617B2B7656CC00113B22 /* ContentView.swift */,
-				DA0B617D2B7656CF00113B22 /* Assets.xcassets */,
+				DA5723A52B78986B00CD9DD6 /* Resources */,
+				DA5723A42B78985E00CD9DD6 /* View */,
+				DA5723A32B78984B00CD9DD6 /* App */,
 				DA0B617F2B7656CF00113B22 /* Preview Content */,
 			);
 			path = WibuApp;
@@ -65,6 +75,75 @@
 				DA0B61802B7656CF00113B22 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA5723A32B78984B00CD9DD6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DA0B61792B7656CC00113B22 /* WibuAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DA5723A42B78985E00CD9DD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA5723A62B78988000CD9DD6 /* Home */,
+				DA0B617B2B7656CC00113B22 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA5723A52B78986B00CD9DD6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA0B617D2B7656CF00113B22 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA5723A62B78988000CD9DD6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DA5723AC2B78CE7B00CD9DD6 /* APIServices */,
+				DA5723AB2B78CE6B00CD9DD6 /* ViewModel */,
+				DA5723AA2B78CE6300CD9DD6 /* Model */,
+				DA5723A92B78CE5400CD9DD6 /* HomeViews */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DA5723A92B78CE5400CD9DD6 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				DA5723A72B78989300CD9DD6 /* HomeView.swift */,
+				DA5723B32B78D2C700CD9DD6 /* ActivityView.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+		DA5723AA2B78CE6300CD9DD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA5723AD2B78CE9200CD9DD6 /* Waifu.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA5723AB2B78CE6B00CD9DD6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA5723AF2B78CFC800CD9DD6 /* WaifuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA5723AC2B78CE7B00CD9DD6 /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				DA5723B12B78D10400CD9DD6 /* WaifuAPIServices.swift */,
+			);
+			path = APIServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +216,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5723A82B78989300CD9DD6 /* HomeView.swift in Sources */,
+				DA5723B22B78D10400CD9DD6 /* WaifuAPIServices.swift in Sources */,
 				DA0B617C2B7656CC00113B22 /* ContentView.swift in Sources */,
+				DA5723B02B78CFC800CD9DD6 /* WaifuViewModel.swift in Sources */,
+				DA5723B42B78D2C700CD9DD6 /* ActivityView.swift in Sources */,
+				DA5723AE2B78CE9200CD9DD6 /* Waifu.swift in Sources */,
 				DA0B617A2B7656CC00113B22 /* WibuAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
